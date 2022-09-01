@@ -1,0 +1,77 @@
+.filter-box {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.filter-box .card-header {
+    cursor: pointer;
+    border-bottom: 0;
+    border-radius: 0;
+}
+
+
+.model {
+    list-style: none;
+    padding-left: 0;
+}
+
+.model li {
+    margin-bottom: 3px;
+}
+
+.model li a {
+    text-decoration: none;
+    color: #51585e;
+}
+
+.scroll {
+    max-height: 150px;
+    overflow: auto;
+}
+
+/* scroll gezinti cubugu ekledik */
+
+.card-header a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.fa-angle-down {
+    float: right;
+    /* ikonu en sağ tarafa almaya yarar */
+    margin-top: 5px;
+    font-size: 15px;
+    color: #9da1a7;
+}
+
+.checkbox-btn {
+    position: relative;
+}
+
+.checkbox-btn input {
+    position: absolute;
+    opacity: 0;
+}
+
+/* yukarıdaki
+
+position: relative;
+position: absolute;
+opacity: 0; 
+
+bu kodları yazmamızın sebebi: Screen Size bölümündeki checkBoxları buton halinde gosterip , checkBox kare kutucukları görünmez hale getirmek içindi (position: absolute sayesinde normal akıştan cıkardık ve kutucuk ile butonu üst üste getirdik)
+*/
+
+.checkbox-btn input:checked~.btn {
+    /* screenSize bölümüdeki checkBoxları tıkladığımızda gercekleşecek olan olay: */
+    background-color: #0d6efd;
+    color: #fff;
+    /* input:checked~.btn : check işlemini yapınca inputtan sonra gelen btn classı bu özelliklere sahip olacak(~) */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+/* bu kod type=number olan fiyat bilgisi kısmsındaki arttırıp , azaltma özelliğine sahip olan kısmı kapatmaya yarar */
